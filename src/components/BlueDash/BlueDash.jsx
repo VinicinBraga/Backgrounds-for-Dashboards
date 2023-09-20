@@ -1,6 +1,6 @@
-import "./Dashboard.css";
+import "./BlueDash.css";
 
-function Dashboard() {
+function BlueDash() {
   return (
     <div className="blue-dash-container">
       <div className="blue-dash-box-container">
@@ -25,4 +25,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default BlueDash;

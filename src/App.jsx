@@ -1,14 +1,14 @@
 import { useState } from "react";
-import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import BlueDash from "./components/BlueDash/BlueDash.jsx";
 import WhiteDash from "./components/WhiteDash/WhiteDash.jsx";
 
 function App() {
   const componentMap = {
-    dashboard: <Dashboard />,
+    blueDash: <BlueDash />,
     whitedash: <WhiteDash />,
   };
 
-  const [selectedComponent, setSelectedComponent] = useState("dashboard");
+  const [selectedComponent, setSelectedComponent] = useState("blueDash");
 
   const handleRadioChange = (event) => {
     setSelectedComponent(event.target.value);
