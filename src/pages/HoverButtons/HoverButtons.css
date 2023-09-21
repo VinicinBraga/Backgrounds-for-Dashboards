@@ -6,6 +6,11 @@
   background-color: rgba(0, 0, 0, 0.623);
 }
 
+.hover-buttons-inputs{
+  margin-top: 2vh;
+  padding-left: 1vw;
+}
+
 .hover_buttons label{
   margin-left: 1vw;
   color: white;

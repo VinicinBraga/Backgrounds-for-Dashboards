@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BlueDash from "./components/BlueDash/BlueDash.jsx";
 import WhiteDash from "./components/WhiteDash/WhiteDash.jsx";
-import HoverButtons from "./components/HoverButtons/HoverButtons.jsx";
+import HoverButtons from "./pages/HoverButtons/HoverButtons.jsx";
 import "./App.css"; // Importe seu arquivo CSS
 
 function App() {
