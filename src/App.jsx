@@ -1,14 +1,12 @@
 import { useState } from "react";
 import BlueDash from "./components/BlueDash/BlueDash.jsx";
 import WhiteDash from "./components/WhiteDash/WhiteDash.jsx";
+import HoverButtons from "./components/HoverButtons/HoverButtons.jsx";
+import "./App.css"; // Importe seu arquivo CSS
 
 function App() {
-  const componentMap = {
-    blueDash: <BlueDash />,
-    whitedash: <WhiteDash />,
-  };
-
   const [selectedComponent, setSelectedComponent] = useState("blueDash");
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleRadioChange = (event) => {
     setSelectedComponent(event.target.value);
@@ -16,19 +14,21 @@ function App() {
 
   return (
     <div className="App">
-      {Object.keys(componentMap).map((key) => (
-        <div key={key}>
-          <input
-            type="radio"
-            value={key}
-            checked={selectedComponent === key}
-            onChange={handleRadioChange}
-          />
-          <label>{key}</label>
-        </div>
-      ))}
-
-      {componentMap[selectedComponent]}
+      <div
+        className="HoverArea"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {isHovered && (
+          <div className="SelectionButtonsContainer">
+            <HoverButtons
+              selectedComponent={selectedComponent}
+              onSelectChange={handleRadioChange}
+            />
+          </div>
+        )}
+      </div>
+      {selectedComponent === "blueDash" ? <BlueDash /> : <WhiteDash />}
     </div>
   );
 }
