@@ -1,7 +1,7 @@
 import "./HoverButtons.css";
 
 // eslint-disable-next-line react/prop-types
-function HoverButtons({ selectedComponent, onSelectChange }) {
+function HoverButtons({ selectedComponent, handleRadioChange }) {
   const componentMap = {
     blueDash: "BlueDash",
     whitedash: "WhiteDash",
@@ -17,7 +17,7 @@ function HoverButtons({ selectedComponent, onSelectChange }) {
             type="radio"
             value={key}
             checked={selectedComponent === key}
-            onChange={onSelectChange}
+            onChange={handleRadioChange}
           />
           <label>{componentMap[key]}</label>
         </div>

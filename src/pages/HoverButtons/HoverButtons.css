@@ -1,12 +1,15 @@
 .hover_buttons {
+  display: flex;
+  flex-direction: column;
   width: 10vw;
-  height: 100vh;
-  padding-top: 5vh;
+  height: 85vh;
+  padding-top: 8vh;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.623);
 }
 
 .dash_titles{
+  display: flex;
   margin-left: 1vw;
   color: white;
 }
