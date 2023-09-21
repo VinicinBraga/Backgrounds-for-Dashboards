@@ -9,8 +9,10 @@ function HoverButtons({ selectedComponent, onSelectChange }) {
 
   return (
     <div className="hover_buttons">
+      <h4 className="dash_titles">Templates</h4>
+      <h5 className="dash_titles">Already Created</h5>
       {Object.keys(componentMap).map((key) => (
-        <div className="hover-buttons-inputs" key={key}>
+        <div className="hover_inputs" key={key}>
           <input
             type="radio"
             value={key}

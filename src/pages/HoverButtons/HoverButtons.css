@@ -6,7 +6,12 @@
   background-color: rgba(0, 0, 0, 0.623);
 }
 
-.hover-buttons-inputs{
+.dash_titles{
+  margin-left: 1vw;
+  color: white;
+}
+
+.hover_inputs{
   margin-top: 2vh;
   padding-left: 1vw;
 }
