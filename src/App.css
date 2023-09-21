@@ -2,12 +2,10 @@
   position: absolute;
   height: 2vh;
   width: 2vw;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.432);
 }
 
 .SelectionButtonsContainer {
-  position: absolute; /* Coloque os botões em posição absoluta */
-  top: 10px; /* Ajuste a posição vertical conforme necessário */
-  left: 10px; /* Ajuste a posição horizontal conforme necessário */
-  z-index: 1; /* Para garantir que os botões estejam na frente do componente abaixo */
+  position: absolute; 
+  z-index: 1;
 }

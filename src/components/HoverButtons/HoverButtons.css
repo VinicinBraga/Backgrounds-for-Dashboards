@@ -1,11 +1,12 @@
 .hover_buttons {
-  background-color: #fff; /* Cor de fundo dos botões */
-  padding: 10px; /* Espaçamento interno */
-  border: 1px solid #ccc; /* Uma borda para os botões */
-  border: red 1px solid;
+  width: 10vw;
+  height: 100vh;
+  padding-top: 5vh;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.623);
 }
 
-/* Estilos para os rótulos dos botões (opcional) */
-.hover_buttons label {
-  margin-right: 10px; /* Espaçamento entre rótulo e botão */
+.hover_buttons label{
+  margin-left: 1vw;
+  color: white;
 }
